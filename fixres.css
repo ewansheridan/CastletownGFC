@@ -1,0 +1,254 @@
+:root {
+    --radius: 10px;
+    --padding: 5px;
+}
+
+
+
+.container {
+    background-color: aliceblue;
+    height: 415vh;
+    
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr 3fr;
+    
+    grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        
+        "U7boysRes U7boysFix U7girlsRes U7girlsFix"
+        "U9boysRes U9boysFix U9girlsRes U9girlsFix"
+        "U11boysRes U11boysFix U11girlsRes U11girlsFix"
+        "U13boysRes U13boysFix U13girlsRes U13girlsFix"
+        "U15boysRes U15boysFix U15girlsRes U15girlsFix"
+        "U17boysRes U17boysFix U17girlsRes U17girlsFix"
+        "JRmenRes JRmenFix JRwomenRes JRwomenFix"
+        "SRmenRes SRmenFix SRwomenRes SRwomenFix"
+        
+        "footer footer footer footer";
+    
+    grid-gap: 1rem;
+    
+    font-family: "Trebuchet MS";
+}
+
+
+
+
+
+header {
+    background: lightgreen;
+    grid-area: header;
+    border-radius: var(--radius);
+    padding: var(--padding);
+    
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+
+header img {
+    margin: 5px;
+    border-radius: var(--radius);
+}
+
+
+header h1 {
+    font-weight: bold;
+    font-size: 300%;
+    color: darkslategray;
+    text-align: center;
+}
+
+
+        
+
+        
+
+nav {
+    background: #dcde5b;
+    grid-area: nav;
+    border-radius: var(--radius);
+    padding: var(--padding);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 25px;
+}
+
+nav a:link {
+    color: #f00e65;
+}
+
+nav a:visited {
+    color: #f00e65;
+}
+
+nav a:hover {
+    color: #12c5cc;
+}
+
+
+
+
+
+
+
+
+.Mfixres {
+    background: lightblue;
+    border-radius: var(--radius);
+    padding: 10px;
+}
+
+.Mfixres h4 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14pt;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: darkslategrey;
+}
+
+.Mfixres dt {
+    font-weight: bold;
+    font-size: 12pt;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.Mfixres dd {
+    margin-left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Ffixres {
+    background: pink;
+    border-radius: var(--radius);
+    padding: 10px;
+}
+
+.Ffixres h4 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14pt;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: darkslategrey;
+}
+
+.Ffixres dt {
+    font-weight: bold;
+    font-size: 12pt;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.Ffixres dd {
+    margin-left: 0;
+}
+
+
+
+
+#U7boysRes{grid-area: U7boysRes;}
+#U7boysFix{grid-area: U7boysFix;}
+#U7girlsRes{grid-area: U7girlsRes;}
+#U7girlsFix{grid-area: U7girlsFix;}
+
+#U9boysRes{grid-area: U9boysRes;}
+#U9boysFix{grid-area: U9boysFix;}
+#U9girlsRes{grid-area: U9girlsRes;}
+#U9girlsFix{grid-area: U9girlsFix;}
+
+#U11boysRes{grid-area: U11boysRes;}
+#U11boysFix{grid-area: U11boysFix;}
+#U11girlsRes{grid-area: U11girlsRes;}
+#U11girlsFix{grid-area: U11girlsFix;}
+
+#U13boysRes{grid-area: U13boysRes;}
+#U13boysFix{grid-area: U13boysFix;}
+#U13girlsRes{grid-area: U13girlsRes;}
+#U13girlsFix{grid-area: U13girlsFix;}
+
+#U15boysRes{grid-area: U15boysRes;}
+#U15boysFix{grid-area: U15boysFix;}
+#U15girlsRes{grid-area: U15girlsRes;}
+#U15girlsFix{grid-area: U15girlsFix;}
+
+#U17boysRes{grid-area: U17boysRes;}
+#U17boysFix{grid-area: U17boysFix;}
+#U17girlsRes{grid-area: U17girlsRes;}
+#U17girlsFix{grid-area: U17girlsFix;}
+
+#JRmenRes{grid-area: JRmenRes;}
+#JRmenFix{grid-area: JRmenFix;}
+#JRwomenRes{grid-area: JRwomenRes;}
+#JRwomenFix{grid-area: JRwomenFix;}
+
+#SRmenRes{grid-area: SRmenRes;}
+#SRmenFix{grid-area: SRmenFix;}
+#SRwomenRes{grid-area: SRwomenRes;}
+#SRwomenFix{grid-area: SRwomenFix;}
+
+
+
+
+
+footer {
+    background: #dcde5b;
+    grid-area: footer;
+    border-radius: var(--radius);
+    padding: var(--padding);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h3 {
+    font-weight: bold;
+    font-size: 14pt;
+    color: darkslategray;
+    margin: 15px 0;
+}
+
+.sponsor-images ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sponsor-images ul li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.sponsor-images img {
+    height: 100px;
+    width: auto;
+}

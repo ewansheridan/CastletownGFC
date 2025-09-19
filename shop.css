@@ -1,0 +1,255 @@
+:root {
+    --radius: 10px;
+    --padding: 5px;
+}
+
+
+
+.container {
+    background-color: aliceblue;
+    height: 310vh;
+    
+    display: grid;
+        
+    grid-template-columns: 1fr 1fr 1fr 0.5fr 0.5fr 1fr;
+    grid-template-rows: 3fr 1fr 2fr 4.5fr 4.5fr 4.5fr 4.5fr 3fr;
+    
+    grid-template-areas:
+        "header header header header header header"
+        "nav nav nav nav nav nav"
+        "announcement announcement announcement announcement shoplink shoplink"
+        "product1 product2 product3 product4 product4 product5"
+        "product6 product7 product8 product9 product9 product10"
+        "product11 product12 product13 product14 product14 product15"
+        "product16 product17 product18 product19 product19 product20"
+        "footer footer footer footer footer footer";
+    
+    grid-gap: 1rem;
+    
+    font-family: "Trebuchet MS";
+}
+
+
+
+
+
+header {
+    background: lightgreen;
+    grid-area: header;
+    border-radius: var(--radius);
+    padding: var(--padding);
+    
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+
+header img {
+    margin: 5px;
+    border-radius: var(--radius);
+}
+
+
+header h1 {
+    font-weight: bold;
+    font-size: 300%;
+    color: darkslategray;
+    text-align: center;
+}
+
+
+        
+
+        
+
+nav {
+    background: #dcde5b;
+    grid-area: nav;
+    border-radius: var(--radius);
+    padding: var(--padding);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 25px;
+}
+
+nav a:link {
+    color: #f00e65;
+}
+
+nav a:visited {
+    color: #f00e65;
+}
+
+nav a:hover {
+    color: #12c5cc;
+}
+
+
+
+
+
+#announcement {
+    grid-area: announcement;
+    background: #ffbd66;
+    border-radius: var(--radius);
+    padding: var(--padding);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20pt;
+    font-weight: bold;
+    color: darkslategray;
+}
+
+
+
+#shoplink {
+    grid-area: shoplink;
+    background: lightgrey;
+    border-radius: var(--radius);
+    padding: var(--padding);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+
+
+#shoplink img {
+    max-width: 70%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.product {
+    background: lightblue;
+    border-radius: var(--radius);
+    padding: var(--padding);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    align-items: start;
+    text-align: center;
+}
+
+
+.product img {
+    border-radius: var(--radius);
+    padding: var(--padding);
+    width: 90%;
+    height: auto;
+    grid-row: 1;
+    justify-self: center;
+}
+
+
+
+.product h4 {
+    font-weight: bold;
+    font-size: 14pt;
+    grid-row: 2;
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+
+.product p {
+    font-style: italic;
+    font-size: 10pt;
+    grid-row: 3;
+    padding-left: 10px;
+    margin-top: 0;
+}
+
+
+
+
+
+#product1 {grid-area: product1;}
+#product2 {grid-area: product2;}
+#product3 {grid-area: product3;}
+#product4 {grid-area: product4;}
+#product5 {grid-area: product5;}
+#product6 {grid-area: product6;}
+#product7 {grid-area: product7;}
+#product8 {grid-area: product8;}
+#product9 {grid-area: product9;}
+#product10 {grid-area: product10;}
+#product11 {grid-area: product11;}
+#product12 {grid-area: product12;}
+#product13 {grid-area: product13;}
+#product14 {grid-area: product14;}
+#product15 {grid-area: product15;}
+#product16 {grid-area: product16;}
+#product17 {grid-area: product17;}
+#product18 {grid-area: product18;}
+#product19 {grid-area: product19;}
+#product20 {grid-area: product20;}
+
+
+
+
+
+
+footer {
+    background: #dcde5b;
+    grid-area: footer;
+    border-radius: var(--radius);
+    padding: var(--padding);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h3 {
+    font-weight: bold;
+    font-size: 14pt;
+    color: darkslategray;
+    margin: 15px 0;
+}
+
+.sponsor-images ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sponsor-images ul li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.sponsor-images img {
+    height: 100px;
+    width: auto;
+}
+
+

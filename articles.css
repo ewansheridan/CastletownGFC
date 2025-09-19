@@ -1,0 +1,174 @@
+:root {
+    --radius: 10px;
+    --padding: 5px;
+}
+
+
+
+.container {
+    background-color: aliceblue;
+    height: 250vh;
+    
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 20fr 3fr;
+    
+    grid-template-areas:
+        "header"
+        "nav"
+        "newsstory"
+        "footer";
+    
+    grid-gap: 1rem;
+    
+    font-family: "Trebuchet MS";
+}
+
+
+
+
+
+header {
+    background: lightgreen;
+    grid-area: header;
+    border-radius: var(--radius);
+    padding: var(--padding);
+    
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+
+header img {
+    margin: 5px;
+    border-radius: var(--radius);
+}
+
+
+header h1 {
+    font-weight: bold;
+    font-size: 300%;
+    color: darkslategray;
+    text-align: center;
+}
+
+
+        
+
+        
+
+nav {
+    background: #dcde5b;
+    grid-area: nav;
+    border-radius: var(--radius);
+    padding: var(--padding);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 25px;
+}
+
+nav a:link {
+    color: #f00e65;
+}
+
+nav a:visited {
+    color: #f00e65;
+}
+
+nav a:hover {
+    color: #12c5cc;
+}
+
+
+
+
+
+
+#newsstory {
+    background: lightblue;
+    grid-area: newsstory;
+    border-radius: var(--radius);
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+#newsstory h1 {
+    font-weight: bold;
+    font-size: 150%;
+    color: darkslategray;
+    text-align: center;
+}
+
+
+
+
+#newsstory .image-container {
+    float: right;
+    padding: 65px 65px 10px 65px;
+    clear: both;
+}
+
+#newsstory .image-container img {
+    width: 100%;
+    display: block;
+}
+
+#newsstory .image-caption {
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+
+
+
+
+footer {
+    background: #dcde5b;
+    grid-area: footer;
+    border-radius: var(--radius);
+    padding: var(--padding);
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+footer h3 {
+    font-weight: bold;
+    font-size: 14pt;
+    color: darkslategray;
+    margin: 15px 0;
+}
+
+.sponsor-images ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sponsor-images ul li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.sponsor-images img {
+    height: 100px;
+    width: auto;
+}
